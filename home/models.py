@@ -13,7 +13,7 @@ class User(models.Model):
     comments=models.CharField(max_length=10,blank=True,null=True)
     age=models.CharField(max_length=10,blank=True,null=True)
     sex=models.CharField(max_length=10,blank=True,null=True)
-    email=models.CharField(max_length=10,blank=True,null=True)
+    email=models.CharField(max_length=255, unique=True)
     curr_location=models.CharField(max_length=10,blank=True,null=True)
     ip_address=models.CharField(max_length=10,blank=True,null=True)
     email=models.CharField(max_length=10,blank=True,null=True)
